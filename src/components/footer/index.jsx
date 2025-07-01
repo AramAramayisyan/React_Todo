@@ -1,6 +1,6 @@
 import styles from './footer.module.css'
 
-function Main({tasks, setTasks}) {
+function Footer({tasks, setTasks}) {
 
     const clearAll = () => {
         setTasks([]);
@@ -18,4 +18,4 @@ function Main({tasks, setTasks}) {
     );
 }
 
-export default Main;
+export default Footer;

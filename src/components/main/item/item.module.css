@@ -1,0 +1,44 @@
+.todoApp__button {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.todoApp__itemText p {
+    color: #353535;
+}
+
+.todoApp__itemActions {
+    display: flex;
+    width: 74px;
+}
+
+.todoApp__buttonEdit {
+    width: 35px;
+    height: 35px;
+    background-color: yellowgreen;
+    color: #fff;
+    margin-right: 4px;
+}
+
+.todoApp__buttonRemove {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .todoApp__itemText p {
+        margin-bottom: 5px;
+    }
+
+    .todoApp__itemActions button {
+        display: flex;
+        width: 25px;
+        height: 25px;
+    }
+}

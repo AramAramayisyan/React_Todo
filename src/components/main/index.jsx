@@ -1,5 +1,8 @@
 import styles from './main.module.css'
 
+// Components
+import Item from './item';
+
 function Main({tasks, setTasks}) {
     const changeItem = (index) => {
         const newTask = prompt("change:", tasks[index]);
@@ -16,25 +19,18 @@ function Main({tasks, setTasks}) {
     };
 
     return (
-        <div className={styles.todoApp__body}>
+        <ul className={styles.todoApp__body}>
             {tasks.map((task, index) => (
-                <div className={styles.todoApp__item}>
-                    <div className={styles.todoApp__itemText}>
-                        <p key={index}>{task}</p>
-                    </div>
-                    <div className={styles.todoApp__itemActions}>
-                        <div className={styles.todoApp__editItem}>
-                            <button onClick={() => changeItem(index)} className={`${styles.todoApp__button} ${styles.todoApp__buttonEdit}`}><i
-                                className="fa-solid fa-pen-to-square"></i></button>
-                        </div>
-                        <div className={styles.todoApp__removeItem}>
-                            <button onClick={() => removeItem(index)} className={`${styles.todoApp__button} ${styles.todoApp__buttonRemove}`}><i
-                                className="fa-solid fa-trash"></i></button>
-                        </div>
-                    </div>
-                </div>
+                <li key={index} className={styles.todoApp__item}>
+                    <Item
+                        task={task}
+                        index={index}
+                        removeItem={removeItem}
+                        changeItem={changeItem}
+                    />
+                </li>
             ))}
-        </div>
+        </ul>
     );
 }
 
