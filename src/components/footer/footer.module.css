@@ -1,0 +1,37 @@
+.todoApp__footer {
+    padding-bottom: 20px;
+}
+
+.todoApp__information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+}
+
+.todoApp__information {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+}
+
+.todoApp__buttonClear {
+    width: 74px;
+    background: #8a33d7;
+    color: #fff;
+}
+
+.todoApp__button {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .todoApp__buttonClear {
+        width: 100%;
+    }
+}

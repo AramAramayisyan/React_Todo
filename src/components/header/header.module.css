@@ -1,0 +1,60 @@
+.todoApp__header{
+    padding-bottom: 20px;
+}
+
+.todoApp__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.todoApp__input {
+    width: 260px;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.todoApp__item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.todoApp__addItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+}
+
+.todoApp__button {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.todoApp__buttonAdd {
+    width: 35px;
+    background-color: #8a33d7;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .todoApp__title {
+        font-size: 20px;
+    }
+
+    .todoApp__input {
+        height: 25px;
+    }
+
+    .todoApp__buttonAdd {
+        width: 25px;
+        height: 25px;
+    }
+}

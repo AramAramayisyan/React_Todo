@@ -1,0 +1,75 @@
+.todoApp__body {
+    padding-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.todoApp__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    background: #e8e9ea;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.todoApp__itemText p {
+    color: #353535;
+}
+
+.todoApp__itemActions {
+    display: flex;
+    width: 74px;
+}
+
+.todoApp__button {
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.todoApp__buttonEdit {
+    width: 35px;
+    height: 35px;
+    background-color: yellowgreen;
+    color: #fff;
+    margin-right: 4px;
+}
+
+.todoApp__buttonRemove {
+    width: 35px;
+    height: 35px;
+    background-color: red;
+    color: #fff;
+}
+
+@media (max-width: 480px) {
+    .todoApp__item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .todoApp__itemText p {
+        margin-bottom: 5px;
+    }
+
+    .todoApp__itemActions button {
+        display: flex;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
+
